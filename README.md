@@ -10,5 +10,12 @@ pip install PyObjC <br>
 pip install pyaudio <br>
 (for issues with installing pyaudio, consult: https://people.csail.mit.edu/hubert/pyaudio/)
 
+## commands (current)
+* what is your name? <br>
+* what time is it? <br>
+* search <br>
+* find location <br>
+* exit <br>
+
 ## next steps:
 add a variety of possibilities for questions & responses: "what's the weather today?" or maybe a feature to open a desktop app through speech!
