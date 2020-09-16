@@ -7,11 +7,11 @@ import random
 from gtts import gTTS
 from time import ctime
 
-
-
 r = sr.Recognizer()
 
 def record_audio(ask = False):
+    # listens to audio
+    # converts audio to string using recognize_google
     with sr.Microphone() as source:
         if ask:
             amy_speak(ask) 
@@ -26,6 +26,8 @@ def record_audio(ask = False):
         return voice_data
 
 def amy_speak(audio_string):
+    # text to speech, creates audio file
+    # speaks, deletes audio file
     tts = gTTS(text=audio_string, lang='en')
     r = random.randint(1, 1000000)
     audio_file = 'audio-' + str(r) + '.mp3'
@@ -35,6 +37,7 @@ def amy_speak(audio_string):
     os.remove(audio_file)
 
 def respond(voice_data):
+    # difference responses
     if 'what is your name' in voice_data:
         amy_speak('My name is Amy')
     if 'what time is it' in voice_data:
