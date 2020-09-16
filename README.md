@@ -3,11 +3,11 @@ a simple speech assistant (no where close to Alexa unfortunately!) built with Py
 includes responses to simple statements like "find location" and "search."
 
 ## dependencies
-pip install speechrecognition
-pip install gTTS
-pip install playsound
-pip install PyObjC
-pip install pyaudio
+pip install speechrecognition <br>
+pip install gTTS <br> 
+pip install playsound <br>
+pip install PyObjC <br>
+pip install pyaudio <br>
 (for issues with installing pyaudio, consult: https://people.csail.mit.edu/hubert/pyaudio/)
 
 ## next steps:
